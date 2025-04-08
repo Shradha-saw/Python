@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .list {
+        color: blue;
+    }
+</style>
+<body>
+    <form action="">
+    <input id="task" placeholder="Enter task">
+    <button onclick="collectData(event)">Add task</button>
+    </form>
+
+  <ul id="unli"></ul>
+  
+</body>
+</html>
+
+<script>
+   
+    var target = document.getElementById("unli");
+    function collectData(e) {
+        e.preventDefault();
+    var userData = document.getElementById("task").value;
+    //console.log(target)
+    var newele = document.createElement('li');
+    newele.classList.add("list");
+    newele.textContent = userData;
+    target.appendChild(newele);
+    }
+</script>
