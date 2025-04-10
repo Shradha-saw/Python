@@ -7,7 +7,7 @@ def disp(a,b):
 def disp(a,b,c):
     print("Inside disp with 3 parameters")
 
-disp()
-disp(10)
-disp(10,20)
+#disp()
+#disp(10)
+#disp(10,20)
 disp(10,20,30)
